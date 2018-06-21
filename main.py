@@ -20,11 +20,18 @@ Hbin, Mbin, Sbin = [toSystem(int(H[0])), toSystem(int(H[1]))], [toSystem(int(M[0
 # we have 3 variables, H M S 
 # time in binary system
 
-for i in range(2):
-    place = 'dec'
-    if i: # if i == 1
-        place = 'init'
-    activateBall(seconds[place], Sbin[i])
+activateBall(hours['dec'], Hbin[0])
+activateBall(hours['init'], Hbin[1])
 
-for hour in minutes['init']:
+activateBall(minutes['dec'], Mbin[0])
+activateBall(minutes['init'], Mbin[1])
+
+activateBall(seconds['dec'], Sbin[0])
+activateBall(seconds['init'], Sbin[1])
+
+for hour in hours['dec']:
+    print(hour.bgcolor)
+
+print()
+for hour in hours['init']:
     print(hour.bgcolor)

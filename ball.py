@@ -1,9 +1,9 @@
 class ball:
     def __init__(self, size = 80):
-        self.bgcolor = 'red'
+        self.bgcolor = '0'
 #    def draw():
     def setActive(self, active=True):
         if active:
-            self.bgcolor = 'blue'
+            self.bgcolor = '1'
         else:
-            self.bgcolor = 'red'
+            self.bgcolor = '0'
