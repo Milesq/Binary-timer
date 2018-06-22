@@ -1,12 +1,16 @@
-from display import display
+from display import getDisplayText as display
 from time import sleep
 from getTime import getTime
-from os import system
+import tkinter as tk
 
-# print('Press Ctrl and C to exit.')
-# system('pause')
-# while True:
-#     print(display(getTime()))
-#     sleep(.4)
-#     system('cls')
-print(display(getTime()))
+app = tk.Tk()
+app.title("Binary Timer")
+
+while True:
+    # app.sele
+    label = tk.Label(app, text = '')
+    label.pack( side = tk.BOTTOM )
+
+    app.update_idletasks()
+    app.update()
+    sleep(1)
