@@ -1,2 +1,5 @@
 __pycache__/
 *.code-workspace
+latex/
+html/
+doxyfile

@@ -1,3 +1,5 @@
+## @package toSystem
+## funkcja
 def invert(num):
 	num = str(num)
 	ret = ''

@@ -1,3 +1,9 @@
+## @package getTime
+# posiada funkcję gettime
+#
+## zwraca czas
+#zwraca czas binarny
+# @return list with 3 place - first hours in binary system, second minutes , third seconds
 def getTime():
     import time
     from toSystem import toSystem
