@@ -5,12 +5,12 @@ def getTime():
         i = 0
         for j in bin:
             if j == '1':
-                dec[i] = True
+                dec[i] = 1
             i += 1
         
-    hours = {'dec': [False, False], 'init': [False, False, False, False]}
-    minutes = {'dec': [False, False, False], 'init': [False, False, False, False]}
-    seconds = {'dec': [False, False, False], 'init': [False, False, False, False]}
+    hours = {'dec': [0, 0], 'init': [0, 0, 0, 0]}
+    minutes = {'dec': [0, 0, 0], 'init': [0, 0, 0, 0]}
+    seconds = {'dec': [0, 0, 0], 'init': [0, 0, 0, 0]}
 
     H, M, S = time.strftime("%H"), time.strftime("%M"), time.strftime("%S")
 
