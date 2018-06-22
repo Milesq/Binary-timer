@@ -11,12 +11,12 @@ def getTime():
         i = 0
         for j in bin:
             if j == '1':
-                dec[i] = 1
+                dec[i] = '@'
             i += 1
         
-    hours = {'dec': [0, 0], 'init': [0, 0, 0, 0]}
-    minutes = {'dec': [0, 0, 0], 'init': [0, 0, 0, 0]}
-    seconds = {'dec': [0, 0, 0], 'init': [0, 0, 0, 0]}
+    hours = {'dec': ['O', 'O'], 'init': ['O', 'O', 'O', 'O']}
+    minutes = {'dec': ['O', 'O', 'O'], 'init': ['O', 'O', 'O', 'O']}
+    seconds = {'dec': ['O', 'O', 'O'], 'init': ['O', 'O', 'O', 'O']}
 
     H, M, S = time.strftime("%H"), time.strftime("%M"), time.strftime("%S")
 
