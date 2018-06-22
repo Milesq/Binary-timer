@@ -1,6 +1,6 @@
-import time
-from toSystem import toSystem
 def getTime():
+    import time
+    from toSystem import toSystem
     def activate(dec, bin):
         i = 0
         for j in bin:
@@ -27,3 +27,5 @@ def getTime():
 
     activate(seconds['dec'], Sbin[0])
     activate(seconds['init'], Sbin[1])
+
+    return {'h': hours, 'm': minutes, 's': seconds}
