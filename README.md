@@ -1,2 +1,2 @@
 # Binary-timer
-Zegar binarny pisany w pythonie - stary projekt
+Binary timer with GUI in Python
