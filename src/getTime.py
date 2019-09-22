@@ -1,12 +1,8 @@
-## @package getTime
-# posiada funkcję gettime
-#
-## zwraca czas
-#zwraca czas binarny
-# @return list with 3 place - first hours in binary system, second minutes , third seconds
-def getTime():
-    import time
-    from toSystem import toSystem
+import time
+
+
+def gettime():
+
     def activate(dec, bin):
         i = 0
         for j in bin:
@@ -20,9 +16,13 @@ def getTime():
 
     H, M, S = time.strftime("%H"), time.strftime("%M"), time.strftime("%S")
 
-    Hbin, Mbin, Sbin = [toSystem(int(H[0])), toSystem(int(H[1]))], [toSystem(int(M[0])), toSystem(int(M[1]))],[toSystem(int(S[0])), toSystem(int(S[1]))]
+    tobin = lambda x: ''.join(bin(int(x))[2:])
 
-    # we have 3 variables, H M S 
+    Hbin = [tobin(H[0]), tobin(H[1])]
+    Mbin = [tobin(M[0]), tobin(M[1])]
+    Sbin = [tobin(S[0]), tobin(S[1])]
+
+    # we have 3 variables, H M S
     # time in binary system
 
     activate(hours['dec'], Hbin[0])
